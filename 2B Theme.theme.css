@@ -1,0 +1,357 @@
+/**
+ * @name NSFW 2B Theme
+ * @author Filunovic
+ * @version 1.1.0
+ * @description NSFW 2B theme for Better discord.
+*/
+
+@import url('https://clearvision.gitlab.io/v6/main.css');
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+
+:root {
+    --main-color: #919191;
+    --hover-color: #666666;
+    --success-color: #41B580;
+    --danger-color: #982929;
+    --url-color: #00acd3 !important;
+    --background-image: url('https://wimg.rule34.xxx//images/3530/84f4f17fdaa1a7e6b385110efa1a8d66.jpeg'); /*https://images8.alphacoders.com/118/1182837.jpg */
+    --background-shading: 10%;
+    --background-position: center;
+    --background-size: cover;
+    --background-repeat: no-repeat;
+    --background-attachment: fixed;
+    --background-brightness: 100%;
+    --background-contrast: 100%;
+    --background-saturation: 100%;
+    --background-grayscale: 0%;
+    --background-invert: 0%;
+    --background-blur: 0px;
+    --background-overlay: rgba(0,0,0,0.30);
+    --user-popout-image: url('');
+    --user-popout-position: center;
+    --user-popout-size: cover;
+    --user-popout-repeat: no-repeat;
+    --user-popout-attachment: fixed;
+    --user-popout-brightness: 94%;
+    --user-popout-contrast: 100%;
+    --user-popout-saturation: 100%;
+    --user-popout-grayscale: 0%;
+    --user-popout-invert: 0%;
+    --user-popout-blur: 1px;
+	--user-popout-overlay: rgba(0,0,0,0.45);
+    --user-modal-image: url('https://r4.wallpaperflare.com/wallpaper/535/832/930/nier-automata-2b-nier-automata-white-hair-blindfold-wallpaper-897098fd819a1dcb16a7a85fd0e1c6bd.jpg');
+    --user-modal-position: center;
+    --user-modal-size: cover;
+    --user-modal-repeat: no-repeat;
+    --user-modal-attachment: fixed;
+    --user-modal-brightness: 100%;
+    --user-modal-contrast: 100%;
+    --user-modal-saturation: 100%;
+    --user-modal-grayscale: 0%;
+    --user-modal-invert: 0%;
+    --user-modal-blur: 1px;
+    --home-icon: url('https://s.imgfi.com/images/ezgif.com-gif-maker-11.gif');
+    --home-position: center;
+    --home-size: 60px;
+    --channel-unread: #ffffffe3;
+    --channel-color: rgb(255,255,255,0.3);
+    --muted-color: rgba(255,255,255,0.1);
+    --online-color: #43b581;
+    --idle-color: #faa61a;
+    --dnd-color: #982929;
+    --streaming-color: #593695;
+    --offline-color: #808080;
+    --main-font: Whitney;
+    --code-font: Consolas;
+    --channels-width: 220px;
+    --members-width: 240px;
+    --backdrop-overlay: rgba(0,0,0,0.8);
+    --backdrop-image: var(--background-image);
+    --backdrop-position: var(--background-position);
+    --backdrop-size: var(--background-size);
+    --backdrop-repeat: var(--background-repeat);
+    --backdrop-attachment: var(--background-attachment);
+    --backdrop-brightness: var(--background-brightness);
+    --backdrop-contrast: var(--background-contrast);
+    --backdrop-saturation: var(--background-saturation);
+    --backdrop-invert: var(--background-invert);
+    --backdrop-grayscale: var(--background-grayscale);
+    --backdrop-sepia: var(--background-sepia);
+    --backdrop-blur: var(--background-blur);
+    --bd-blue: var(--main-color);
+    --bd-blue-hover: var(--hover-color);
+    --bd-blue-active: var(--hover-color);
+    --rs-small-spacing: 2px;
+    --rs-medium-spacing: 2px;
+    --rs-large-spacing: 2px;
+    --rs-small-width: 2.5px;
+    --rs-medium-width: 3px;
+    --rs-large-width: 2.5px;
+    --rs-avatar-shape: 50%;
+    --rs-online-color: #43b581;
+    --rs-idle-color: #faa61a;
+    --rs-dnd-color: #f04747;
+    --rs-offline-color: #636b75;
+    --rs-streaming-color: #643da7;
+    --rs-phone-visible: block;
+}
+
+/* Any custom CSS below here */
+
+/* Top bar */
+	.typeWindows-2-g3UY {
+    height: 18px;
+    width: 100vw;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 5));
+    box-shadow: 0 0 20px rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+}
+/* Top text :before */
+.typeWindows-2-g3UY>.wordmark-2u86JB:before {
+    content: "2B EDITION 💦🍑";
+    color: rgba(255,255,255,.7);
+    font-size: 15px;
+    text-shadow: 0 0 3px #000;
+}
+/* Top text :after */
+.typeWindows-2-g3UY > .wordmark-2u86JB:after {
+    content: "1.1.0";
+    color: rgba(255, 255, 255, 0.3);
+    font-family: var(--code-font);
+    font-size: 10px;
+}
+
+/* Channel List */
+.sidebar-1tnWFu {
+    width: var(--channels-width);
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 4.5));
+}
+/* Chat background */
+.base-2jDfDU .chat-2ZfjoI {
+    background: rgb(0 0 0 / 25%);
+}
+/* Member list */
+.container-2o3qEW {
+    background-color: rgba(0,0,0,0.15);
+}
+/* Server list */
+.layer-86YKbF .wrapper-1_HaEi {
+    background-color: rgb(0 0 0 / 45%);
+}
+/* Chat box */
+.channelTextArea-1VQBuV {
+    background: rgba(0,0,0,.35);
+    transition: all .15s ease-in-out;
+}
+/* Profile banner top color remove */
+div.banner-1YaD3N.profileBanner-1owKI5 {
+	
+    background-color: rgb(0 0 0 / 0%) !important;
+}
+/* Profile popout top color remove */
+div.banner-1YaD3N.popoutBanner-3cqRD9 {
+	background-color: rgb(0 0 0 / 0%) !important;
+}
+/* Profile popout background image */
+.userPopout-2j1gM4 {
+    background-image: url(https://cdn.discordapp.com/attachments/1000474546236825671/1000600140979130469/long_pages.jpg);
+    background-size: 550px;
+    background-position-x: -70px;
+	background-repeat: no-repeat;
+}
+/* Remove annoying "source" text */
+.container-YkUktl:before {
+    content: "M4nny";
+	font-size: 15px;
+    right: 50%;
+    text-align: right;
+    transform: translateX(50%);
+}
+/* Notification number */
+.numberBadge-37OJ3S, .textBadge-1fdDPJ {
+    background: #f90000 !important;
+    box-shadow: 0 0 10px -3px #ff7171e0, 0 0 0 1px #e21313a1;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 25%);
+    transition: all .3s ease-in-out;
+}
+/* Unread messages dot */
+.item-2LIpTv {
+    width: 12px;
+    margin-left: -6px;
+    border-radius: 20px;
+    background: #dadada;
+    box-shadow: 0 0 20px -1px #288cbf;
+}
+/* New messages bar */
+.newMessagesBar-1hF-9G:before {
+    background: #005ab7;
+}
+/* Screen share icon */
+.icon-2Ug6UV {
+    padding: 1px;
+    color: #00ff43;
+    filter: drop-shadow(0 0 3px #000000);
+}
+/* Channel name shadow */
+.container-ZMc96U .children-3xh0VB .icon-2xnN2Y {
+    color: #ffffff;
+    width: 22px;
+	filter: none;
+}
+.wrapper-NhbLHG.modeUnread-3Cxepe .content-1gYQeQ .mainContent-20q_Hp .name-28HaxV {
+    color: var(--channel-unread);   
+	filter: none; 
+	text-shadow: none;
+}
+.wrapper-NhbLHG.modeUnread-3Cxepe .content-1gYQeQ .mainContent-20q_Hp .icon-2W8DHg {
+    color: var(--channel-unread);
+    filter: none;
+    opacity: 1;
+}
+/* Reactions */
+.reaction-3vwAF2 {
+    background-color: rgb(45 45 45 / 69%);
+    border-radius: 8px;
+    border: 2px solid #7d7d7d;
+    transition: all .15s ease-in-out;
+}
+.reaction-3vwAF2:hover {
+    background-color: rgb(96 0 0 / 93%);
+    border: 2px solid #7d7d7d;
+}
+.reaction-3vwAF2.reactionMe-1PwQAc:hover {
+    background-color: rgb(96 0 0 / 93%);
+    border: 2px solid #7d7d7d;
+}
+.reaction-3vwAF2.reactionMe-1PwQAc {
+    background-color: rgb(96 0 0 / 73%);
+    border: 2px solid #7d7d7d;
+}
+/* New messages */
+	/* Line */
+.isUnread-3Lojb- {
+    border-color: #d20000;
+}
+	/* Text box */
+.unreadPill-3nEWYM {
+    background-color: #d20000;
+}
+	/* Arrow head */
+.unreadPillCapStroke-1nE1Q8 {
+    fill: #d20000;
+    color: #d20000;
+}
+/* Game activity */
+.members-3WRCEx .member-2gU6Ar .activityText-1rR-8O strong {
+    color: #cacaca;
+    font-weight: 700;
+    transition: all .15s ease-in-out;
+}
+/* Boost icon color */
+.container-1NXEtd .container-1-ERn5 .flowerStarContainer-1QeD-L {
+    color: #c459d8;
+}
+/* Mentions color */
+.theme-dark .mention {
+    padding: 0 4px;
+    border-radius: 5px;
+    line-height: 22px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+    background-color: rgb(0 158 171 / 68%);
+    color: rgba(255,255,255, 1);
+}
+/* Bot tag */
+.botTag-7aX5WZ {
+    padding: 1px 2px;
+    background: rgb(143 143 143);
+    color: rgb(255 255 255);
+    font-weight: 700;
+    text-shadow: 0 0 1px rgb(0 0 0 / 30%);
+    border-radius: 3px;
+}
+span.botText-1fD6Qk span{
+	display: none;
+}
+span.botText-1fD6Qk:before{
+	content:''; 
+}
+
+/* Popups */
+.theme-dark .modal-1Kmy_E, .theme-dark .root-g14mjS {
+    background-image: url('https://cdn.discordapp.com/attachments/1000474546236825671/1000600140685512775/threds.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
+    box-shadow: none;
+}/* Threads */
+.layer-2aCOJ3 .container-18GwIk {
+    background-image: url('https://cdn.discordapp.com/attachments/1000474546236825671/1000600140685512775/threds.jpeg');
+    background-size: cover;
+	background-position: center;
+    /* background-blend-mode: overlay; */
+    animation: cv-menu-fold-y .2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
+    transform-origin: 50% 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+} 
+/* Inbox */
+.messagesPopoutWrap-3zryHW, .recentMentionsPopout-2bI1ZN {
+    background-image: url('https://cdn.discordapp.com/attachments/1000474546236825671/1000600141226573975/profilepop.jpg');
+    background-size: cover;
+	background-position: center;
+    background-blend-mode: overlay;
+    transform-origin: 50% 0px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+    animation: 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1) 0s 1 normal none running cv-menu-fold-y;
+    border-radius: 5px;
+}
+.channelHeader-DFRX8q {
+    background: rgba(0,0,0,.5);
+    padding-right: 10px;
+    padding-left: 20px;
+}
+/* Roles */
+.role-2TIOKu {
+    background: rgb(132 132 132 / 53%);
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 5px;
+    transition: all .1s ease-in-out;
+    cursor: default;
+}
+.role-2TIOKu .roleCircle-3K9O3d {
+    width: 12px;
+    height: 12px;
+}
+.roleCircle-3K9O3d {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0 1px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    forced-color-adjust: none;
+} 
+/* Settings */
+.standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG {
+    background: rgba(0,0,0,0);
+    color: rgba(255,255,255) !important;
+    transition: all .15s ease-in-out,background .3s .2s;
+} 
+/* Link Color Fix */
+.embed-hKpSrO .embedTitleLink-1QbYA- {
+    color: #00acd3 !important;
+}
+.embed-hKpSrO .embedLink-1TLNja {
+    color: #ffffff ;
+    transition: all .1s ease-in-out;
+}
